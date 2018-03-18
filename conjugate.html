@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<title>
 			Japanese Plain Form Practice
 		</title>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="vocab.js"></script>
+		<script src="conjugationModule.js"></script>
+		<script src="conjugate.js"></script>
+
 	</head>
 	<body>
 		<div class="sidenav">
-			<p> test sidenav </p>
+			<b> Grammar Type: </b>
+			<div>
+			plain present affirmative
+			<input id="plain-present-affirmative" type="checkbox">
+			</div>
+			<div>
+			plain present negative
+			<input id="plain-present-negative" type="checkbox">
+			</div>
+			<div>
+			plain past affirmative
+			<input id="plain-past-affirmative" type="checkbox">
+			</div>
+			<div>
+			plain past negative
+			<input id="plain-past-negative" type="checkbox">
+			</div>
+			<br>
+			<b> Vocab: </b>
+			<div>
+			Fall 2017 Module 1.1
+			<input id="f17m1-1" type="checkbox">
+			</div>
+			<div>
+			Fall 2017 Module 3.1
+			<input id="f17m3-1" type="checkbox">
+			</div>
 
 		</div>
 
 		<div class="main">
 			<p>Plain Form Conjugation Practice</p>
+			<p id="conjQuery">This is the query</p>
+			<input id="conjugateBox" type="text" onsubmit="return checkBtn()"><br>
+			<button id="checkButton" onclick="checkBtn()">Check</button>
 		</div>
 	</body>
 </html>
