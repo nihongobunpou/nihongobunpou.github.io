@@ -42,34 +42,13 @@ a {
     background-size: cover;
 }
 
-.bcg1 {
-    background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bcg2 {
-    background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Mainsail */
 
 .header {
     height: 9em;
     background-color: #1f4970;
     position: relative;
+    background: blue;
 }
 
 .mainsail {
@@ -78,15 +57,15 @@ a {
 }
 
 .mainsail-title {
-    font-family: "Serif", "Times New Roman", "Georgia";
+    font-family: "PT Serif", "Times New Roman", "Georgia", serif;
     font-weight: 900;
     font-size: 38px;
     letter-spacing: 0.035em;
     color: #f7fafc;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: block;
-    padding-left: 137px;
-    padding-top: 46px;
+    padding-left: 170px;
+    padding-top: 28px;
 }
 
 /* Navbar */
@@ -147,10 +126,10 @@ span.safe-navbar-title {
     cursor: pointer;
 }
 
-/*.safe-navbar a.selected,
+.safe-navbar a.selected,
 .safe-navbar span.selected {
     border-bottom: 2px solid #f7fafc;
-}*/
+}
 
 .safe-navbar span i.fas {
     margin-left: 0.2em;
@@ -224,8 +203,7 @@ i.mega-menu-chevron {
 .home-jumbotron-title {
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
-    padding-top: 32px;
+    font-size: 20px;
 }
 
 .home-jumbotron-subtitle {
