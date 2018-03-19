@@ -42,18 +42,37 @@ function generateQuery()
 	// TODO get all of the conjugation types in a list, then choose one
 
 	// TODO get all of the vocab words in a list, then choose one
-	for(var set in vobab)
+	var thisWordlist = [];
+	for(var set in vocab)
 	{
-		for(var word in vocab['key'])
+		for(var subset in vocab[set])
 		{
-
+			for(var word in vocab[set][subset])
+			{
+				if(vocab[set][subset][word]['type'] == 'verb')
+				{
+					//console.log(vocab[set][subset][word]);
+					thisWordlist.push(vocab[set][subset][word])
+				}
+			}
 		}
 	}
+	var thisWord = thisWordlist[Math.floor(Math.random() * thisWordlist.length)];
 
+	console.log(thisWordlist)
+	console.log(thisWord)
 
 	// TODO now generate the correct word based on the chosen words, and
 	// save it in the state, save the cookie, and update the conjQuery query
 	
+	//For now just do plain form past
+	var answer = module.exports.conjugate(thisWord['plain'], "plain affirmative")
+	console.log(answer[5])
+
+	$('#conjQuery').html("Conjugate " + thisWord['plain'] + " to plain present negative.");
+	state['current']['solution'] = answer[5]['form']
+	console.log(answer[5]['form'])
+
 }
 
 //Get the state of each button, and use it to update our current state
@@ -154,6 +173,7 @@ function checkBtn()
 	if(thisAttempt === state['current']['solution'])
 	{
 		//TODO if the guessed word is correct, generate a new word
+		generateQuery()
 
 	}
 	else
