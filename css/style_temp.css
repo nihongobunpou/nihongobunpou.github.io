@@ -1,0 +1,429 @@
+/* Global Styles */
+
+html {
+    min-height: 100%;
+}
+
+body {
+	height: 100%; 
+    /*font-size: 16px;
+    font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    color: #000000;
+    position: relative;
+    min-height: 100vh;*/
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: #000080;
+}
+
+
+/* Header */
+
+/* Body */
+.bcg {
+	background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
+	/* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bcg1 {
+    background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bcg2 {
+    background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Mainsail */
+
+.header {
+    height: 9em;
+    background-color: #1f4970;
+    position: relative;
+}
+
+.mainsail {
+    height: 100%;
+    background: url("/firediamond.png") no-repeat 0px -12px;
+}
+
+.mainsail-title {
+    font-family: "Serif", "Times New Roman", "Georgia";
+    font-weight: 900;
+    font-size: 38px;
+    letter-spacing: 0.035em;
+    color: #f7fafc;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: block;
+    padding-left: 137px;
+    padding-top: 46px;
+}
+
+/* Navbar */
+
+.safe-navbar-wrapper {
+    width: 100%;
+    margin: 0;
+    height: 2.25em;
+    background-color: #002244;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+}
+
+.safe-navbar-wrapper.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.safe-navbar {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.safe-navbar a,
+.safe-navbar span,
+span.safe-navbar-title {
+    display: inline-block;
+    color: #f7fafc;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    padding: 0.3em 0.75em 0.2em 0.75em;
+    margin: 0 0.25em;
+    font-size: 16px;
+}
+
+span.safe-navbar-title {
+    display: none;
+    padding-right: 2em;
+}
+
+.safe-navbar-wrapper.sticky span.safe-navbar-title {
+    display: inline-block;
+}
+
+.safe-navbar a:hover,
+.safe-navbar span:hover {
+    border-bottom: 2px solid #f7fafc;
+    cursor: pointer;
+}
+
+/*.safe-navbar a.selected,
+.safe-navbar span.selected {
+    border-bottom: 2px solid #f7fafc;
+}*/
+
+.safe-navbar span i.fas {
+    margin-left: 0.2em;
+}
+
+/* Mega Menu */
+
+.mega-menu {
+    position: relative;
+    top: 10px;
+    background-color: #ffffff;
+    width: 20em;
+    padding: 0.75em;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 6px;
+}
+
+.mega-menu-callout {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.mega-menu-link-list {
+    list-style: none inside;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-menu-main-link {
+    padding-bottom: 0.75em;
+    font-weight: bold;
+}
+
+.mega-menu-link-list li a {
+    display: block;
+    width: 100%;
+}
+
+i.mega-menu-chevron {
+    display: inline-block;
+    float: right;
+}
+
+
+/* Jumbotron */
+
+.home-jumbotron-wrapper {
+	height: 8em;
+    background: url("http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg") #646669 center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-jumbotron {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    background: url("http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg") #646669 center center;
+}
+
+.home-jumbotron-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 32px;
+}
+
+.home-jumbotron-subtitle {
+    text-align: center;
+    line-height: 1em;
+}
+
+.jumbotron-link {
+    color: #ffffff;
+}
+
+.jumbotron-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+	padding: 2em 0 8em 0;
+}
+
+.safe-title {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.safe-subtitle {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #444444;
+}
+
+.content {
+    margin-bottom: 3em;
+}
+
+
+/* Link Card */
+
+.link-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2em 0;
+}
+
+.link-card-title {
+    display: block;
+    width: 100%;
+}
+
+.link-card-icon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    float: left;
+    color: #002244;
+}
+
+.link-card-title-text {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 45px;
+    margin-bottom: 0.5em;
+}
+
+.link-card {
+    display: block;
+    margin: 0 0 0 24px;
+    padding: 0 0 3em 20px;
+    border-left: 2px solid #002244;
+    flex: 1 1;
+}
+
+.link-card-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.link-card-list li {
+    margin-bottom: 0.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+.link-card-see-more {
+    position: absolute;
+    bottom: 0;
+}
+
+.link-card-see-more-btn {
+    font-size: 16px;
+    color: #014e90;
+    border-color: #014e90;
+    background-color: transparent;
+}
+
+.link-card-see-more-btn:hover {
+    color: #ffffff;
+    border-color: #014e90;
+    background-color: #014e90;
+}
+
+
+/* Chemical Safety Board */
+
+.card-custom {
+	color: black;
+	margin: auto;
+	padding: 2em;
+    text-decoration: none;
+}
+
+.card-custom:hover {
+	cursor: pointer;
+	background-color: #fbfbfb;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #002344;
+    color: #f7fafc;
+    text-align: center;
+    height: 8em;
+}
+
+.footer a {
+    color: #f7fafc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+:lang(ja-jp) { font-family: Arial, sans-serif; line-height: 1.5rem; }
+
+
+/* Side Bar */
+#sidebar-wrapper {
+  top: 52px;
+  left: -200px;
+  width: 200px;
+  background-color: #5677fc;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+}
+.sidebar-nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.25);
+  color: white;
+  text-decoration: none;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+  transition: all 0.3s ease-out;
+  margin-left: -200px;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper.sidebar-toggle {
+    transition: 0s;
+    left: 200px;
+  }
+}
