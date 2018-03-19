@@ -273,6 +273,7 @@ i.mega-menu-chevron {
     display: flex;
     flex-direction: column;
     margin: 0 0 2em 0;
+    padding-left: 250px;
 }
 
 .link-card-title {
@@ -318,6 +319,7 @@ i.mega-menu-chevron {
     margin-bottom: 0.75em;
     font-weight: bold;
     line-height: 1.1em;
+    padding-top: 10px;
 }
 
 .link-card-see-more {
