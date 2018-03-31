@@ -32,7 +32,7 @@ a {
 
 /* Body */
 .bcg {
-	background: url(http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg);
+	background: url(sakura_bcg.jpg);
 	/* Full height */
     height: 100%; 
 
@@ -184,7 +184,7 @@ i.mega-menu-chevron {
 
 .home-jumbotron-wrapper {
 	height: 8em;
-    background: url("http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg") #646669 center center;
+    background: url("sakura_bcg.jpg") #646669 center center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +197,7 @@ i.mega-menu-chevron {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.5em;
     padding: 0.5em 1em;
-    background: url("http://s1.1zoom.me/big0/219/Flowering_trees_Closeup_459400.jpg") #646669 center center;
+    background: url("sakura_bcg.jpg") #646669 center center;
 }
 
 .home-jumbotron-title {
