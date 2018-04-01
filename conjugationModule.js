@@ -156,5 +156,3 @@ module.exports = {
 
 // Begin Neckardt Code
 
-//console.log("hello")
-//console.log(module.exports.conjugate("いく", "plain affirmative"))
