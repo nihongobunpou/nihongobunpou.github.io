@@ -5,16 +5,21 @@ var state = {}
 //TODO maybe history cause it'll look nice :)
 //by that I mean maybe like some basic analytics, how many thing we got
 //right, how many wrong, whatever
+//
+//Turns out the cookie probably cannot store all of this data, so i'll have to 
+//find a way how to either store it externally, or scrape the idea
+//
+//OOOOR pack that shit really hard <3 <3 lets s.e.r.e.a.l.i.z.e
 state['history'] = null
 
 state['current'] = {query: null, solution: null}
 
 state['config'] = {
 	conjType: 
-		{ 	"plain-present-affirmative": true, 
-	   		"plain-present-negative": true,
-			"plain-past-affirmative": true, 
-			"plain-past-negative": true
+		{ 	"plain present affirmative": true, 
+	   		"plain present negative": true,
+			"plain past affirmative": true, 
+			"plain past negative": true
 		}, 
 	vocabList:
 		{	
@@ -23,7 +28,8 @@ state['config'] = {
 				"1.1": true, 
 				"3.1": true
 			}
-		}
+		},
+	verbJap: true
 }
 
 function bake_cookie(name, value) {
@@ -37,9 +43,49 @@ function read_cookie(name) {
 	return result;
 }
 
+function getConjInt(stringConj)
+{
+
+	if(stringConj === "plain present affirmative")
+	{
+		return 0;
+	}
+	else if(stringConj === "plain present negative")
+	{
+		return 1
+	}
+	else if(stringConj === "plain past affirmative")
+	{
+		return 6
+	}
+	else if(stringConj === "plain past negative")
+	{
+		return 8
+	}
+	else
+	{
+		console.log("Fuck we got an error");
+		return -1
+	}
+}
+
 function generateQuery()
 {
+	//console.log("generateQuery");
 	// TODO get all of the conjugation types in a list, then choose one
+	var thisConjList = [];
+	Object.keys(state['config']['conjType']).forEach(function(key, index)
+	{
+		if(state['config']['conjType'][key] == true)
+		{
+			thisConjList.push(key)
+			//console.log(key);
+		}
+		//console.log(state['config']['conjType'][key] )
+
+
+	});
+	var thisConj = thisConjList[Math.floor(Math.random() * thisConjList.length)];
 
 	// TODO get all of the vocab words in a list, then choose one
 	var thisWordlist = [];
@@ -66,12 +112,30 @@ function generateQuery()
 	// save it in the state, save the cookie, and update the conjQuery query
 	
 	//For now just do plain form past
-	var answer = module.exports.conjugate(thisWord['plain'], "plain affirmative")
-	console.log(answer[5])
-
-	$('#conjQuery').html("Conjugate " + thisWord['plain'] + " to plain present negative.");
-	state['current']['solution'] = answer[5]['form']
-	console.log(answer[5]['form'])
+	var answer = module.exports.conjugate(thisWord['plain'], "plain present affirmative")
+	var answerAnswer = null
+	for(cnjIndx in answer)
+	{
+		//console.log(answer[cnjIndx]);
+		if(answer[cnjIndx]['name'] === thisConj)
+		{
+			answerAnswer = answer[cnjIndx]['form'];
+		}
+	}
+	if(answerAnswer === null)
+	{
+		console.log("fucking shit something didn't work nerd")
+	}
+	if(state['config']['verbJap'] === true)
+	{
+		$('#conjQuery').html("Conjugate " + thisWord['plain'] + " to "+ thisConj+ ".");
+	}
+	else
+	{
+		$('#conjQuery').html("Conjugate \"" + thisWord['english'] + "\" to "+ thisConj+ ".");
+	}
+	state['current']['solution'] = answerAnswer
+	console.log(answerAnswer)
 
 }
 
@@ -79,16 +143,16 @@ function generateQuery()
 function updateStateFromBoxes()
 {
 	console.log(state)
-	// console.log($('#plain-present-affirmative:checked').val());
+	// console.log($('#plain present affirmative:checked').val());
 	
 	// Grammar state
-	state['config']['conjType']['plain-present-affirmative'] = 
+	state['config']['conjType']['plain present affirmative'] = 
 		$('#plain-present-affirmative').is(":checked");
-	state['config']['conjType']['plain-present-negative'] = 
+	state['config']['conjType']['plain present negative'] = 
 		$('#plain-present-negative').is(":checked");
-	state['config']['conjType']['plain-past-affirmative'] = 
+	state['config']['conjType']['plain past affirmative'] = 
 		$('#plain-past-affirmative').is(":checked");
-	state['config']['conjType']['plain-past-negative'] = 
+	state['config']['conjType']['plain past negative'] = 
 		$('#plain-past-negative').is(":checked");
 
 	// Vocabulary Set State
@@ -97,6 +161,8 @@ function updateStateFromBoxes()
 		$('#f17m1-1').is(":checked");
 	state['config']['vocabList']['f17']['3.1'] = 
 		$('#f17m3-1').is(":checked");
+	state['config']['verbJap'] = 
+		$('#verbJap').is(":checked");
 
 }
 
@@ -104,18 +170,18 @@ function updateStateFromBoxes()
 function setBoxState()
 {
 	//console.log(state)
-	//console.log(state['config']['conjType']['plain-present-affirmative']);
-	//console.log(state['config']['conjType']['plain-present-affirmative'] == 
+	//console.log(state['config']['conjType']['plain present affirmative']);
+	//console.log(state['config']['conjType']['plain present affirmative'] == 
 	//		"on" ? true : false);
 	// Grammar state
 	$('#plain-present-affirmative').prop('checked', 
-		state['config']['conjType']['plain-present-affirmative']);
+		state['config']['conjType']['plain present affirmative']);
 	$('#plain-present-negative').prop('checked', 
-		state['config']['conjType']['plain-present-negative']);
+		state['config']['conjType']['plain present negative']);
 	$('#plain-past-affirmative').prop('checked', 
-		state['config']['conjType']['plain-past-affirmative']);
+		state['config']['conjType']['plain past affirmative']);
 	$('#plain-past-negative').prop('checked', 
-		state['config']['conjType']['plain-past-negative'] );
+		state['config']['conjType']['plain past negative'] );
 
 	// Vocabulary Set State
 	// Vocab fall 2017
@@ -123,6 +189,8 @@ function setBoxState()
 			state['config']['vocabList']['f17']['1.1']);
 	$('#f17m3-1').prop('checked', 
 			state['config']['vocabList']['f17']['3.1']);
+
+	$('#verbJap').prop("checked", state['config']['verbJap']);
 
 }
 
@@ -132,7 +200,6 @@ function mainFunc()
 	
 	//TODO
 	//Load the settings from the cookie if there is one, otherwise keep
-	
 
 	if(read_cookie("conjugate") !== null)
 	{
@@ -146,7 +213,7 @@ function mainFunc()
 	}
 	setBoxState()
 
-	//TODO Generate a new query (or maybe grab the last one the user used)
+	// Generate a new query based on default params
 	generateQuery()
 
 	//Setup key events on the button
@@ -158,6 +225,11 @@ function mainFunc()
 	});
 }
 
+function regenerate()
+{
+	updateStateFromBoxes();
+	generateQuery()
+}
 
 function checkBtn()
 {
@@ -166,13 +238,13 @@ function checkBtn()
 	
 	updateStateFromBoxes();
 
-	//TODO here is where we actually do the checking stuff
 	var thisAttempt = $("#conjugateBox").val();
 
-	//TODO Check if the guessed word is correct
 	if(thisAttempt === state['current']['solution'])
 	{
-		//TODO if the guessed word is correct, generate a new word
+		//TODO we need a cool fucking effect here yo
+
+		//if the guessed word is correct, generate a new word
 		generateQuery()
 
 	}

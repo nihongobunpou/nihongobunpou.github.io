@@ -4,14 +4,19 @@
 // Slight modification made by Nicholas Eckardt
 
   var conjugationForms = [
+	  //0
     {  name: "plain present affirmative",           forms: ["う", "く", "ぐ", "す", "つ", "む", "ぶ", "ぬ", "る", "る"]  },
 
-  // present tense: 0-5
+  // 1
   {  name: "polite present affirmative",          forms: ["います", "きます", "ぎます", "します", "ちます", "みます", "びます", "にます", "ります", "ます"]  },
+  // 2
   {  name: "plain present negative",              forms: ["わない", "かない", "がない", "さない", "たない", "まない", "ばない", "なない", "らない", "ない"]  },
+  // 3
   {  name: "polite present negative",             forms: ["いません", "きません", "ぎません", "しません", "ちません", "みません", "びません", "にません", "りません", "ません"]  },
-//  {  name: "curt negative (archaic)",     forms: ["わん", "かん", "がん", "さん", "たん", "まん", "ばん", "なん", "らん", "ん"]  },
-//  {  name: "polite negative (archaic)",   forms: ["いませぬ", "きませぬ", "ぎませぬ", "しませぬ", "ちませぬ", "みませぬ", "びませぬ", "にませぬ", "りませぬ", "ませぬ"]  },
+  // 4 
+  {  name: "curt negative (archaic)",     forms: ["わん", "かん", "がん", "さん", "たん", "まん", "ばん", "なん", "らん", "ん"]  },
+  // 5
+  {  name: "polite negative (archaic)",   forms: ["いませぬ", "きませぬ", "ぎませぬ", "しませぬ", "ちませぬ", "みませぬ", "びませぬ", "にませぬ", "りませぬ", "ませぬ"]  },
 
   // past tense: 6-9
   {  name: "plain past affirmative",       forms: ["った", "いた", "いだ", "した", "った", "んだ", "んだ", "んだ", "った", "た"]  },
