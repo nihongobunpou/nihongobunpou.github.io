@@ -1,0 +1,51 @@
+//How this format works: 
+// The "question" is the sentence to be asked. Each comma represents a question. 
+// The "answer" is a hint, followed by what the correct answer should be. 
+// If you have trouble understanding this format I can write one which is easier
+// to understand
+var sentenceData = 
+[
+	{
+		question: ["昨日、海は", "です。"], 
+		answer: [["blue", "あおなかった"]]
+	}, 
+	{
+		question: ["メリーさんは", "、", "です。"], 
+		answer: [["lovely, cute", "かわいくて"], ["kind", "やさし"]]
+	}, 
+	{
+		question: ["子どもの時、私はピアノが", "です。"], 
+		answer: [["not good at", "じょうずじゃない"]]
+	}, 
+	{
+		question: ["高校の時、たけしさんは", "が", "ですか。"], 
+		answer: [["study", "べんきょうするの"], ["good at", "じょうず"]]
+	}, 
+	{
+		question: ["このTシャツは", "ます。"], 
+		answer: [["too big", "おおきすぎ"]]
+	}, 
+	{
+		question: ["あたまがとても", "です。それから、ねつが", "です。"], 
+		answer: [["painful", "いたいん"], ["fever", "ある"]]
+	}, 
+	{
+		question: ["今日はたくさん", "よ。"], 
+		answer: [["give advice", "ねたほうがいいです"]]
+	}, 
+	{
+		question: ["先週に日本語のテストは", "です。", "先生は私は", "と言います。"], 
+		answer: [["not good", "よくない"], ["therefore", "だから"],
+		["please study", "べんきょうしてください"]]
+	}, 
+	{
+		question: ["たくさんぼうしがありますね。", "は", "が",
+		"です。私は", "です。"], 
+		answer: [["red", "あかいの"], ["beautiful", "きれい"],
+		["most expensive", "いちばんたかい"], ["do not want to buy", "かいたくない"]]
+	}, 
+	{
+		question: ["この人はめがねを", "、", "、とてもかわいいです。"],
+		answer: [["wear", "かけていて"], ["high school student", "しょうがくせいで"]]
+	}
+]

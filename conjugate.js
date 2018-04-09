@@ -88,7 +88,7 @@ function generateQuery()
 	var thisConj = thisConjList[Math.floor(Math.random() * thisConjList.length)];
 
 	// TODO get all of the vocab words in a list, then choose one
-	var thisWordlist = [];
+	var thisWordList = [];
 	for(var set in vocab)
 	{
 		for(var subset in vocab[set])
@@ -98,14 +98,41 @@ function generateQuery()
 				if(vocab[set][subset][word]['type'] == 'verb')
 				{
 					//console.log(vocab[set][subset][word]);
-					thisWordlist.push(vocab[set][subset][word])
+					thisWordList.push(vocab[set][subset][word])
 				}
 			}
 		}
 	}
-	var thisWord = thisWordlist[Math.floor(Math.random() * thisWordlist.length)];
+	var thisWord = thisWordList[Math.floor(Math.random() * thisWordList.length)];
 
-	console.log(thisWordlist)
+	console.log("here");
+	var bigArray = []
+	for(var asdfW in thisWordList)
+	{
+		var z = module.exports.conjugate(thisWordList[asdfW]['plain'], "plain present affirmative");
+		w = thisWordList[asdfW];
+		//console.log(z);
+		for(var asdfC in thisConjList)
+		{
+			var aa = thisConjList[asdfC];
+			for(cnjIndx in z)
+			{
+				//console.log(answer[cnjIndx]);
+				if(z[cnjIndx]['name'] === aa)
+				{
+					zz = z[cnjIndx]['form'];
+					w[thisConjList[asdfC]] = zz;
+				}
+			}
+			console.log(zz);
+
+		}
+		bigArray.push(w);
+	}
+	console.log(JSON.stringify(bigArray));
+	console.log("there");
+
+	console.log(thisWordList)
 	console.log(thisWord)
 
 	// TODO now generate the correct word based on the chosen words, and
