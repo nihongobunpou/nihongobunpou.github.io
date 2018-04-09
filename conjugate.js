@@ -105,35 +105,35 @@ function generateQuery()
 	}
 	var thisWord = thisWordList[Math.floor(Math.random() * thisWordList.length)];
 
-	console.log("here");
-	var bigArray = []
-	for(var asdfW in thisWordList)
-	{
-		var z = module.exports.conjugate(thisWordList[asdfW]['plain'], "plain present affirmative");
-		w = thisWordList[asdfW];
-		//console.log(z);
-		for(var asdfC in thisConjList)
-		{
-			var aa = thisConjList[asdfC];
-			for(cnjIndx in z)
-			{
-				//console.log(answer[cnjIndx]);
-				if(z[cnjIndx]['name'] === aa)
-				{
-					zz = z[cnjIndx]['form'];
-					w[thisConjList[asdfC]] = zz;
-				}
-			}
-			console.log(zz);
+//	console.log("here");
+//	var bigArray = []
+//	for(var asdfW in thisWordList)
+//	{
+//		var z = module.exports.conjugate(thisWordList[asdfW]['plain'], "plain present affirmative");
+//		w = thisWordList[asdfW];
+//		//console.log(z);
+//		for(var asdfC in thisConjList)
+//		{
+//			var aa = thisConjList[asdfC];
+//			for(cnjIndx in z)
+//			{
+//				//console.log(answer[cnjIndx]);
+//				if(z[cnjIndx]['name'] === aa)
+//				{
+//					zz = z[cnjIndx]['form'];
+//					w[thisConjList[asdfC]] = zz;
+//				}
+//			}
+//			console.log(zz);
+//
+//		}
+//		bigArray.push(w);
+//	}
+//	console.log(JSON.stringify(bigArray));
+//	console.log("there");
 
-		}
-		bigArray.push(w);
-	}
-	console.log(JSON.stringify(bigArray));
-	console.log("there");
-
-	console.log(thisWordList)
-	console.log(thisWord)
+//	console.log(thisWordList)
+//	console.log(thisWord)
 
 	// TODO now generate the correct word based on the chosen words, and
 	// save it in the state, save the cookie, and update the conjQuery query
