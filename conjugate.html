@@ -8,7 +8,7 @@
 		</title>
 		<script src="jquery-3.3.1.min.js"></script>
 		<script src="jquery-ui.min.js"></script>
-		<script src="vocab.js"></script>
+		<script src="verb_db.js"></script>
 		<script src="conjugationModule.js"></script>
 		<script src="conjugate.js"></script>
 
@@ -33,6 +33,7 @@
 			<input id="plain-past-negative" type="checkbox">
 			</div>
 			<br>
+			<!--
 			<b> Vocab (not ready): </b>
 			<div>
 			Fall 2017 Module 1.1
@@ -43,6 +44,7 @@
 			<input id="f17m3-1" type="checkbox">
 			</div>
 			<br>
+			-->
 			<b> Other Options: </b>
 			<div>
 			Verb in Japanese
@@ -52,14 +54,34 @@
 			<div>
 			<button id="regenerate" onclick="regenerate()">Update Preferences</button>
 			</div>
+			<div>
+				<h1 id="streak">Streak: 0</h1>
+			</div>
 
 		</div>
 
 		<div class="main">
 			<p>Plain Form Conjugation Practice</p>
 			<p id="conjQuery">This is the query</p>
+			<div id="inputField">
 			<input id="conjugateBox" type="text" onsubmit="return checkBtn()"><br>
 			<button id="checkButton" onclick="checkBtn()">Check</button>
+			</div>
+			
+			<p id="answer"></p>
+		</div>
+		<div class="footer">
+			<div id="left">
+			<p>
+			If you encounter any errors, please report them on 
+			<a href="https://github.com/nihongobunpou/nihongobunpou.github.io" target="_blank">github.</a>
+			</p>
+			</div>
+			<div id="right">
+			<a href="https://github.com/nihongobunpou/nihongobunpou.github.io" target="_blank">
+				<img id="githubLink" src="/img/github_link.png"></img>
+			</a>
+			</div>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,2 @@
+This project relies on conjugation code from 
+https://github.com/Pomax/node-jp-conjugations

@@ -14,6 +14,8 @@ state['history'] = null
 
 state['current'] = {query: null, solution: null}
 
+var timesWrong = 0;
+var streak = 0;
 state['config'] = {
 	conjType: 
 		{ 	"plain present affirmative": true, 
@@ -88,21 +90,23 @@ function generateQuery()
 	var thisConj = thisConjList[Math.floor(Math.random() * thisConjList.length)];
 
 	// TODO get all of the vocab words in a list, then choose one
-	var thisWordList = [];
-	for(var set in vocab)
-	{
-		for(var subset in vocab[set])
-		{
-			for(var word in vocab[set][subset])
-			{
-				if(vocab[set][subset][word]['type'] == 'verb')
-				{
-					//console.log(vocab[set][subset][word]);
-					thisWordList.push(vocab[set][subset][word])
-				}
-			}
-		}
-	}
+//	var thisWordList = [];
+//	for(var set in vocab)
+//	{
+//		for(var subset in vocab[set])
+//		{
+//			for(var word in vocab[set][subset])
+//			{
+//				if(vocab[set][subset][word]['type'] == 'verb')
+//				{
+//					//console.log(vocab[set][subset][word]);
+//					thisWordList.push(vocab[set][subset][word])
+//				}
+//			}
+//		}
+//	}
+
+	thisWordList = verb_db;
 	var thisWord = thisWordList[Math.floor(Math.random() * thisWordList.length)];
 
 //	console.log("here");
@@ -269,15 +273,43 @@ function checkBtn()
 
 	if(thisAttempt === state['current']['solution'])
 	{
+
 		//TODO we need a cool fucking effect here yo
 
+		$( "#conjugateBox"  ).animate({
+			backgroundColor: "#aaffaa",
+		}, 500 );
+		$( "#conjugateBox"  ).animate({
+			backgroundColor: "#ffffff",
+		}, 500 );
+		
+
+		timesWrong = 0;
+		streak += 1;
+		$("#streak").html("Streak: " + streak);
+		$("#answer").delay(800).html("");
+		$("#conjugateBox").delay(500)
+			.queue(function(n) {
+				$(this).val("");
+				n();
+				generateQuery()
+			}).fadeIn(200);
 		//if the guessed word is correct, generate a new word
-		generateQuery()
 
 	}
 	else
 	{
 		//TODO make this even cooler
+		timesWrong += 1;
+		streak = 0;
+		$("#streak").html("Streak: " + streak);
+		console.log(timesWrong);
+		if(timesWrong >= 3)
+		{
+			console.log("update");
+			$("#answer").html("Answer: " + state['current']['solution']);
+
+		}
 		$("#conjugateBox").effect("shake");
 	}
 
