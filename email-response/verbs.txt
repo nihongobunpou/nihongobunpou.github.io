@@ -833,18 +833,18 @@
         "plain": "うんどうする",
         "english": "to do physical exercises",
         "plain present affirmative": "うんどうする",
-        "plain present negative": "うんどうすらない",
-        "plain past affirmative": "うんどうすった",
-        "plain past negative": "うんどうすらなかった"
+        "plain present negative": "うんどうしない",
+        "plain past affirmative": "うんどうした",
+        "plain past negative": "うんどうしなかった"
     },
     {
         "type": "verb",
         "plain": "はなしをする",
         "english": "to tell a story, to have a talk",
         "plain present affirmative": "はなしをする",
-        "plain present negative": "はなしをすらない",
-        "plain past affirmative": "はなしをすった",
-        "plain past negative": "はなしをすらなかった"
+        "plain present negative": "はなしをしない",
+        "plain past affirmative": "はなしをした",
+        "plain past negative": "はなしをしなかった"
     },
     {
         "type": "verb",
@@ -968,99 +968,99 @@
         "plain": "きめる",
         "english": "to decide",
         "plain present affirmative": "きめる",
-        "plain present negative": "きめらない",
-        "plain past affirmative": "きめった",
-        "plain past negative": "きめらなかった"
+        "plain present negative": "きめない",
+        "plain past affirmative": "きめた",
+        "plain past negative": "きめなかった"
     },
     {
         "type": "verb",
         "plain": "やめる",
         "english": "to quit",
         "plain present affirmative": "やめる",
-        "plain present negative": "やめらない",
-        "plain past affirmative": "やめった",
-        "plain past negative": "やめらなかった"
+        "plain present negative": "やめない",
+        "plain past affirmative": "やめた",
+        "plain past negative": "やめなかった"
     },
     {
         "type": "verb",
         "plain": "うける",
         "english": "to take a test, quiz, exam, etc.",
         "plain present affirmative": "うける",
-        "plain present negative": "うけらない",
-        "plain past affirmative": "うけった",
-        "plain past negative": "うけらなかった"
+        "plain present negative": "うけない",
+        "plain past affirmative": "うけた",
+        "plain past negative": "うけなかった"
     },
     {
         "type": "verb",
         "plain": "りょこうする",
         "english": "to travel",
         "plain present affirmative": "りょこうする",
-        "plain present negative": "りょこうすらない",
-        "plain past affirmative": "りょこうすった",
-        "plain past negative": "りょこうすらなかった"
+        "plain present negative": "りょこうしない",
+        "plain past affirmative": "りょこうした",
+        "plain past negative": "りょこうしなかった"
     },
     {
         "type": "verb",
         "plain": "よやくする",
         "english": "to make a reservation",
         "plain present affirmative": "よやくする",
-        "plain present negative": "よやくすらない",
-        "plain past affirmative": "よやくすった",
-        "plain past negative": "よやくすらなかった"
+        "plain present negative": "よやくしない",
+        "plain past affirmative": "よやくした",
+        "plain past negative": "よやくしなかった"
     },
     {
         "type": "verb",
         "plain": "れんしゅうする",
         "english": "to practice",
         "plain present affirmative": "れんしゅうする",
-        "plain present negative": "れんしゅうすらない",
-        "plain past affirmative": "れんしゅうすった",
-        "plain past negative": "れんしゅうすらなかった"
+        "plain present negative": "れんしゅうしない",
+        "plain past affirmative": "れんしゅうした",
+        "plain past negative": "れんしゅうしなかった"
     },
     {
         "type": "verb",
         "plain": "けんかする",
         "english": "to have a fight; to quarrel",
         "plain present affirmative": "けんかする",
-        "plain present negative": "けんかすらない",
-        "plain past affirmative": "けんかすった",
-        "plain past negative": "けんかすらなかった"
+        "plain present negative": "けんかしない",
+        "plain past affirmative": "けんかした",
+        "plain past negative": "けんかしなかった"
     },
     {
         "type": "verb",
         "plain": "しょうかいする",
         "english": "to introduce",
         "plain present affirmative": "しょうかいする",
-        "plain present negative": "しょうかいすらない",
-        "plain past affirmative": "しょうかいすった",
-        "plain past negative": "しょうかいすらなかった"
+        "plain present negative": "しょうかいしない",
+        "plain past affirmative": "しょうかいした",
+        "plain past negative": "しょうかいしなかった"
     },
     {
         "type": "verb",
         "plain": "ちこくする",
         "english": "to be late",
         "plain present affirmative": "ちこくする",
-        "plain present negative": "ちこくすらない",
-        "plain past affirmative": "ちこくすった",
-        "plain past negative": "ちこくすらなかった"
+        "plain present negative": "ちこくしない",
+        "plain past affirmative": "ちこくした",
+        "plain past negative": "ちこくしなかった"
     },
     {
         "type": "verb",
         "plain": "ダイエットする",
         "english": "to go on a diet",
         "plain present affirmative": "ダイエットする",
-        "plain present negative": "ダイエットすらない",
-        "plain past affirmative": "ダイエットすった",
-        "plain past negative": "ダイエットすらなかった"
+        "plain present negative": "ダイエットしない",
+        "plain past affirmative": "ダイエットした",
+        "plain past negative": "ダイエットしなかった"
     },
     {
         "type": "verb",
         "plain": "りゅうがくする",
         "english": "to study abroad",
         "plain present affirmative": "りゅうがくする",
-        "plain present negative": "りゅうがくすらない",
-        "plain past affirmative": "りゅうがくすった",
-        "plain past negative": "りゅうがくすらなかった"
+        "plain present negative": "りゅうがくしない",
+        "plain past affirmative": "りゅうがくした",
+        "plain past negative": "りゅうがくしなかった"
     },
     {
         "type": "verb",
@@ -1076,18 +1076,18 @@
         "plain": "ねつがある",
         "english": "to have a fever",
         "plain present affirmative": "ねつがある",
-        "plain present negative": "ねつがあらない",
+        "plain present negative": "ねつがない",
         "plain past affirmative": "ねつがあった",
-        "plain past negative": "ねつがあらなかった"
+        "plain past negative": "ねつがなかった"
     },
     {
         "type": "verb",
         "plain": "きょうみがある",
         "english": "to be interested in",
         "plain present affirmative": "きょうみがある",
-        "plain present negative": "きょうみがあらない",
+        "plain present negative": "きょうみがない",
         "plain past affirmative": "きょうみがあった",
-        "plain past negative": "きょうみがあらなかった"
+        "plain past negative": "きょうみがなかった"
     },
     {
         "type": "verb",
@@ -1112,18 +1112,18 @@
         "plain": "せきがでる",
         "english": "to cough",
         "plain present affirmative": "せきがでる",
-        "plain present negative": "せきがでらない",
-        "plain past affirmative": "せきがでった",
-        "plain past negative": "せきがでらなかった"
+        "plain present negative": "せきがでない",
+        "plain past affirmative": "せきがでた",
+        "plain past negative": "せきがでなかった"
     },
     {
         "type": "verb",
         "plain": "わかれる",
         "english": "to break up; to separate",
         "plain present affirmative": "わかれる",
-        "plain present negative": "わかれらない",
-        "plain past affirmative": "わかれった",
-        "plain past negative": "わかれらなかった"
+        "plain present negative": "わかれない",
+        "plain past affirmative": "わかれた",
+        "plain past negative": "わかれなかった"
     },
     {
         "type": "verb",
@@ -1148,35 +1148,35 @@
         "plain": "きんちょうする",
         "english": "to get nervous",
         "plain present affirmative": "きんちょうする",
-        "plain present negative": "きんちょうすらない",
-        "plain past affirmative": "きんちょうすった",
-        "plain past negative": "きんちょうすらなかった"
+        "plain present negative": "きんちょうしない",
+        "plain past affirmative": "きんちょうした",
+        "plain past negative": "きんちょうしなかった"
     },
     {
         "type": "verb",
         "plain": "しんぱいする",
         "english": "to worry",
         "plain present affirmative": "しんぱいする",
-        "plain present negative": "しんぱいすらない",
-        "plain past affirmative": "しんぱいすった",
-        "plain past negative": "しんぱいすらなかった"
+        "plain present negative": "しんぱいしない",
+        "plain past affirmative": "しんぱいした",
+        "plain past negative": "しんぱいしなかった"
     },
     {
         "type": "verb",
         "plain": "けがをする",
         "english": "to get injured",
         "plain present affirmative": "けがをする",
-        "plain present negative": "けがをすらない",
-        "plain past affirmative": "けがをすった",
-        "plain past negative": "けがをすらなかった"
+        "plain present negative": "けがをしない",
+        "plain past affirmative": "けがをした",
+        "plain past negative": "けがをしなかった"
     },
     {
         "type": "verb",
         "plain": "かんどうする",
         "english": "to be moved/touched",
         "plain present affirmative": "かんどうする",
-        "plain present negative": "かんどうすらない",
-        "plain past affirmative": "かんどうすった",
-        "plain past negative": "かんどうすらなかった"
+        "plain present negative": "かんどうしない",
+        "plain past affirmative": "かんどうした",
+        "plain past negative": "かんどうしなかった"
     }
 ]

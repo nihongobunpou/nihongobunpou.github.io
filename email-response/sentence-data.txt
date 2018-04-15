@@ -7,19 +7,19 @@ var sentenceData =
 [
 	{
 		question: ["昨日、海は", "です。"], 
-		answer: [["blue", "あおなかった"]]
+		answer: [["blue", "あおかった"]]
 	}, 
 	{
 		question: ["メリーさんは", "、", "です。"], 
-		answer: [["lovely, cute", "かわいくて"], ["kind", "やさし"]]
+		answer: [["lovely, cute", "かわいくて"], ["kind", "やさしい"]]
 	}, 
 	{
 		question: ["子どもの時、私はピアノが", "です。"], 
-		answer: [["not good at", "じょうずじゃない"]]
+		answer: [["not good at", "とくいじゃなかった"]]
 	}, 
 	{
-		question: ["高校の時、たけしさんは", "が", "ですか。"], 
-		answer: [["study", "べんきょうするの"], ["good at", "じょうず"]]
+		question: ["高校の時、たけしさんは", "が", "でしたか。"], 
+		answer: [["study", "べんきょうするの"], ["good at", "とくい"]]
 	}, 
 	{
 		question: ["このTシャツは", "ます。"], 
@@ -27,25 +27,25 @@ var sentenceData =
 	}, 
 	{
 		question: ["あたまがとても", "です。それから、ねつが", "です。"], 
-		answer: [["painful", "いたいん"], ["fever", "ある"]]
+		answer: [["painful", "いたいん"], ["fever", "あるん"]]
 	}, 
 	{
 		question: ["今日はたくさん", "よ。"], 
 		answer: [["give advice", "ねたほうがいいです"]]
 	}, 
 	{
-		question: ["先週に日本語のテストは", "です。", "先生は私は", "と言います。"], 
-		answer: [["not good", "よくない"], ["therefore", "だから"],
+		question: ["先週の日本語のテストは", "です。", "先生は私は", "と言っていました。"], 
+		answer: [["not good", "よくなかった"], ["therefore", "だから"],
 		["please study", "べんきょうしてください"]]
 	}, 
 	{
 		question: ["たくさんぼうしがありますね。", "は", "が",
-		"です。私は", "です。"], 
-		answer: [["red", "あかいの"], ["beautiful", "きれい"],
+		"です。だから、私は", "です。"], 
+		answer: [["red", "あかいの"], ["beautiful", "きれいです"],
 		["most expensive", "いちばんたかい"], ["do not want to buy", "かいたくない"]]
 	}, 
 	{
 		question: ["この人はめがねを", "、", "、とてもかわいいです。"],
-		answer: [["wear", "かけていて"], ["high school student", "しょうがくせいで"]]
+		answer: [["wear", "かけていて"], ["high school student", "こうこうせいで"]]
 	}
 ]
