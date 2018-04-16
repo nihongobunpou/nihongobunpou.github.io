@@ -7,6 +7,9 @@ state['answer'] = null
 
 var correct = 0;
 var wrong = 0;
+var showAnsShow = false;
+var ansShow = false;
+var nextShow = false;
 
 function checkBox( question )
 {
@@ -18,10 +21,11 @@ function checkBox( question )
 		console.log("true");
 
 		correct += 1;
-		if(correct >= state['answer'].length)
+		if(correct >= state['answer'].length && !nextShow)
 		{
 			var f= $('<button id="next" onclick="genNewQuery()">Next</button>');
 			$("#theSent").append(f);
+			nextShow = true;
 		}
 	}
 	else
@@ -30,8 +34,12 @@ function checkBox( question )
 		$("#inputBox" + question).effect("shake");
 		if(wrong > 3)
 		{
-			var r= $('<button id="showAns" onclick="showans()">Show Answer</button>');
-			$("#theSent").append(r);
+			if(!showAnsShow)
+			{
+				var r= $('<button id="showAns" onclick="showans()">Show Answer</button>');
+				$("#theSent").append(r);
+				showAnsShow = true;
+			}
 		}
 		console.log("false");
 	}
@@ -72,28 +80,39 @@ function showans()
 {
 	var g= $('<br><div>' + state['answer'] + '</div>');
 	var f= $('<button id="next" onclick="genNewQuery()">Next</button>');
-	$("#theSent").append(g);
-	$("#theSent").append(f);
+	if(!ansShow)
+	{
+		$("#theSent").append(g);
+		ansShow = true;
+	}
+	if(!nextShow)
+	{
+		$("#theSent").append(f);
+		nextShow = true;
+	}
 }
 
 function genNewQuery()
 {
 
+	nextShow = false;
+	ansShow = false;
+	showAnsShow = false;
 	wrong = 0;
 	correct = 0;
 	var thisBlock = sentenceData[Math.floor(Math.random() * sentenceData.length)];
 
 	sentence = genQuery(thisBlock);
 	state = sentence;
+	ansShow = false;
 
 	$("#theSent").html(sentence['question']);
 	for(question in state['answer'])
 	{
-		$('#inputBox' + question).keydown(function (event) {
-			console.log("test");
+		$('#inputBox' + question).on('keydown', function (event) {
 			var keypressed = event.keyCode || event.which;
 			if (keypressed == 13) {
-				checkBox(question);
+				$(this).submit()
 			}
 		});
 	}
