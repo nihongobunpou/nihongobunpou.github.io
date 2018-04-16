@@ -50,7 +50,7 @@ var sentenceData =
 		answer: [["wear", "かけていて"], ["high school student", "こうこうせいで"]]
 	},
 	{
-		question: ["私は日本語が", "。 そして、日本語の歌が"],
+		question: ["私は日本語が", "。 そして、日本語の歌が","。"],
 		answer: [["can speak", "はなせます"], ["can sing", "うたえます"]]
 	},
 	{
