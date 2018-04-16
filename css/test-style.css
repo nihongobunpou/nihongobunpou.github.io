@@ -37,12 +37,12 @@ body {
 	font-size: 20pt;
 }
 .footer{
-	font-size: 8pt;
+	font-size: 12pt;
 	position : absolute;
 	height : 40px;
-	right: -20px;
-	bottom: 0px;
-	width: 100%;
+	right: -12%;
+	bottom: 20px;
+	width: 110%;
 }
 #right{
 	width: 18%;
