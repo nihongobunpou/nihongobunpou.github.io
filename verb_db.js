@@ -715,9 +715,9 @@ var verb_db = [
         "plain": "そうじする",
         "english": "to get clean",
         "plain present affirmative": "そうじする",
-        "plain present negative": "そうじすらない",
-        "plain past affirmative": "そうじすった",
-        "plain past negative": "そうじすらなかった"
+        "plain present negative": "そうじしない",
+        "plain past affirmative": "そうじした",
+        "plain past negative": "そうじしなかった"
     },
     {
         "type": "verb",
