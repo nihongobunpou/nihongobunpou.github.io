@@ -355,7 +355,7 @@ var verb_db = [
         "plain": "でかける",
         "english": "to go out",
         "plain present affirmative": "でかける",
-        "plain present negative": "でかけらない",
+        "plain present negative": "でかけない",
         "plain past affirmative": "でかけた",
         "plain past negative": "でかけなかった"
     },
